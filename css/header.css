@@ -1,0 +1,53 @@
+.banner {
+    position: relative;
+    background-image: url(/img/capa.png);
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 120, 255, 0.74), rgba(76, 0, 130, 0.658));
+    z-index: 1;
+}
+
+.cabecalho {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+.cabecalho-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.cabecalho-logo {
+    width: 260px;
+    height: 150px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.cabecalho-menu-item-link {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+}

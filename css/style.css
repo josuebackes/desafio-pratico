@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.carrosel-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 200px;
+}
+
+.carrosel-container-conteudo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+}
+
+.carrosel-container-conteudo-itens {
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ativo {
+    opacity: 1;
+    transition: opacity 1s ease, transform 1s ease; 
+}
+
+.carrosel-container-conteudo-titulo {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 88px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.carrosel-container-conteudo-botoes{
+    display: flex;
+    gap: 40px;
+}   
+
+.carrosel-container-botao {
+    color: white;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 15px 50px;
+}
+
+.carrosel-container-botao:hover {
+    background-color: rgb(133, 13, 245);
+    border-color: rgb(133, 13, 245);
+}
+
+#carrosel-botao-voltar, #carrosel-botao-avancar {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+}
+
+#carrosel-botao-voltar img, #carrosel-botao-avancar img {
+    width: 100%;
+    height: 100%;
+}
+
+#carrosel-botao-avancar {
+    transform: rotate(180deg);
+}   
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
