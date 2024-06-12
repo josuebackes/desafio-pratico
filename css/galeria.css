@@ -1,0 +1,108 @@
+.container-galeria {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.galeria, .albuns-extra {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.artistas {
+    display: flex;
+}
+
+#botao-artista-um, #botao-artista-dois, #botao-artista-tres, #botao-artista-quatro {
+    border: none;
+    background-color: transparent;
+}
+
+.artistas-album {
+    width: 270px;
+    height: 270px;
+    margin: 15px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+#galeria-descricao-um {
+    margin-left: 40px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: block;
+}
+
+.galeria-descricao-titulo, .galeria-descricao-subtitulo, .galeria-descricao-titulo-animacao, .galeria-descricao-subtitulo-animacao {
+    color: blueviolet;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.galeria-descricao-titulo, .galeria-descricao-titulo-animacao {
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.galeria-descricao-subtitulo, .galeria-descricao-subtitulo-animacao {
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.galeria-descricao-paragrafo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#galeria-descricao-dois {
+    margin-left: 40px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+}
+
+#galeria-descricao-tres{
+    margin-left: 40px;
+    margin-top: 350px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+}
+
+#galeria-descricao-quatro {
+    margin-left: 40px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+}
+
+.galeria-descricao-titulo-animacao, .galeria-descricao-subtitulo-animacao {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 30%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+#galeria-albuns-extra {
+    display: none;
+}
