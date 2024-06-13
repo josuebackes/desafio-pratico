@@ -1,6 +1,6 @@
 .banner {
     position: relative;
-    background-image: url(./img/capa.png);
+    background-image: url("/img/capa.png");
     background-position: center;
     background-size: contain;
     height: 100vh;
