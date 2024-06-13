@@ -1,11 +1,11 @@
 .rodape {
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     background-color: #202020;
 }
 
 .rodape-conteudo {
-    padding-top: 75px;
+    padding-top: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
