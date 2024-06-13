@@ -1,0 +1,33 @@
+.rodape {
+    height: 30vh;
+    width: 100%;
+    background-color: #202020;
+}
+
+.rodape-conteudo {
+    padding-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodape-logo {
+    width: 260px;
+    height: 150px;
+}
+
+.rodape-links {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.rodape-links-titulo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.rodape-links-subtitulo {
+    font-size: 16px;
+    font-weight: 400;
+}
