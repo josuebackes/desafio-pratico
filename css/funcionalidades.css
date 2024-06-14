@@ -3,7 +3,7 @@
     background-image: url("/img/capa.png");
     background-position: center;
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,8 +66,8 @@
 }
 
 #funcionalidades-conteudo-img-um, #funcionalidades-conteudo-img-dois {
-    width: 50%;
-    height: 50%;
+    width: 38.5%;
+    height: 38.5%;
 }
 
 #funcionalidades-conteudo-img-um{
