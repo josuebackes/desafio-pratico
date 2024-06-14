@@ -1,59 +1,36 @@
-let botaoArtistaUm = document.getElementById("botao-artista-um");
-let botaoArtistaDois = document.getElementById("botao-artista-dois");
-let botaoArtistaTres = document.getElementById("botao-artista-tres");
-let botaoArtistaQuatro = document.getElementById("botao-artista-quatro");
+let botoesArtistas = [
+    { botao: "botao-artista-um", conteudo: "galeria-descricao-dois" },
+    { botao: "botao-artista-dois", conteudo: "galeria-descricao-tres" },
+    { botao: "botao-artista-tres", conteudo: "galeria-descricao-quatro" },
+    { botao: "botao-artista-quatro", conteudo: "galeria-albuns-extra" }
+];
 
- 
 let conteudoFixo = document.getElementById("galeria-descricao-um");
-let conteudoDois = document.getElementById("galeria-descricao-dois");
-let conteudoTres = document.getElementById("galeria-descricao-tres");
-let conteudoQuatro = document.getElementById("galeria-descricao-quatro");
-let conteudoAlbunsAdicionais = document.getElementById("galeria-albuns-extra");
+let conteudoFuncionalidadesImagemUm = document.getElementById("funcionalidades-conteudo-img-um");
+let conteudoFuncionalidadesImagemDois = document.getElementById("funcionalidades-conteudo-img-dois");
 
-botaoArtistaUm.addEventListener('click', () => {
-    if (conteudoDois.style.display === 'none' || conteudoDois.style.display === '') {
-        conteudoFixo.style.display = 'none';
-        conteudoDois.style.display = 'block';
-        conteudoFixo = conteudoDois;
-    } else {
-        conteudoFixo = document.getElementById("galeria-descricao-um");
-        conteudoDois.style.display = 'none';
-        conteudoFixo.style.display = 'block';
-    }  
-});
+botoesArtistas.forEach(item => {
+    let botao = document.getElementById(item.botao);
+    let conteudo = document.getElementById(item.conteudo);
 
-botaoArtistaDois.addEventListener('click', () => {
-    if (conteudoTres.style.display === 'none' || conteudoTres.style.display === '') {
-        conteudoFixo.style.display = 'none';
-        conteudoTres.style.display = 'block';
-        conteudoFixo = conteudoTres;
-    } else {
-        conteudoFixo = document.getElementById("galeria-descricao-um");
-        conteudoTres.style.display = 'none';
-        conteudoFixo.style.display = 'block';
-    }  
-});
-
-botaoArtistaTres.addEventListener('click', () => {
-    if (conteudoQuatro.style.display === 'none' || conteudoQuatro.style.display === '') {
-        conteudoFixo.style.display = 'none';
-        conteudoQuatro.style.display = 'block';
-        conteudoFixo = conteudoQuatro;
-    } else {
-        conteudoFixo = document.getElementById("galeria-descricao-um");
-        conteudoQuatro.style.display = 'none';
-        conteudoFixo.style.display = 'block';
-    }  
-});
-
-botaoArtistaQuatro.addEventListener('click', () => {
-    if (conteudoAlbunsAdicionais.style.display === 'none' || conteudoAlbunsAdicionais.style.display === '') {
-        conteudoFixo.style.display = 'none';
-        conteudoAlbunsAdicionais.style.display = 'block';
-        conteudoFixo = conteudoAlbunsAdicionais;
-    } else {
-        conteudoFixo = document.getElementById("galeria-descricao-um");
-        conteudoAlbunsAdicionais.style.display = 'none';
-        conteudoFixo.style.display = 'block';
-    }  
+    botao.addEventListener('click', () => {
+        if (conteudo.style.display === 'none' || conteudo.style.display === '') {
+            conteudoFixo.style.display = 'none';
+            conteudo.style.display = 'block';
+            if (item.botao === "botao-artista-quatro") {
+                conteudoFuncionalidadesImagemUm.style.display = 'none';
+                conteudoFuncionalidadesImagemDois.style.display = 'none';
+            } else {
+                conteudoFuncionalidadesImagemUm.style.display = 'block';
+                conteudoFuncionalidadesImagemDois.style.display = 'block';
+            }
+            conteudoFixo = conteudo;
+        } else {
+            conteudoFixo = document.getElementById("galeria-descricao-um");
+            conteudo.style.display = 'none';
+            conteudoFixo.style.display = 'block';
+            conteudoFuncionalidadesImagemUm.style.display = 'block';
+            conteudoFuncionalidadesImagemDois.style.display = 'block';
+        }
+    });
 });

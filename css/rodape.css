@@ -1,7 +1,9 @@
 .rodape {
-    height: 40vh;
+    position: relative;
+    height: 250px;
     width: 100%;
     background-color: #202020;
+    z-index: 2;
 }
 
 .rodape-conteudo {

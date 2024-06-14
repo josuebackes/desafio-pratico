@@ -1,0 +1,96 @@
+.funcionalidades {
+    position: relative;
+    background-image: url("/img/capa.png");
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.funcionalidades::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 120, 255, 0.74), rgba(76, 0, 130, 0.658));
+    z-index: 1;
+}
+
+.funcionalidades-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    z-index: 2;
+}
+
+.funcionalidades-conteudo-texto {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 420px;
+}
+
+.funcionalidades-conteudo-texto-titulo, .funcionalidades-conteudo-texto-subtitulo, .funcionalidades-conteudo-texto-paragrafo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.funcionalidades-conteudo-texto-titulo {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.funcionalidades-conteudo-texto-subtitulo {
+    color: #AEEDDF;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.funcionalidades-conteudo-texto-paragrafo {
+    color: white;
+    font-size: 20px;
+}
+
+#funcionalidades-conteudo-imagens {
+    display: flex;
+    gap: 40px;
+}
+
+#funcionalidades-conteudo-img-um, #funcionalidades-conteudo-img-dois {
+    width: 50%;
+    height: 50%;
+}
+
+#funcionalidades-conteudo-img-um{
+    transform: rotate(10deg) translateY(-120px) translateX(70px);
+    display: block;
+}
+
+#funcionalidades-conteudo-img-dois{
+    transform: rotate(10deg) translateY(40px) translateX(70px);
+}
+
+
+@media (max-width: 1280px) {
+    #funcionalidades-conteudo-img-um, #funcionalidades-conteudo-img-dois {
+        width: 37%;
+        height: 37%;
+    }
+    
+    #funcionalidades-conteudo-img-um{
+        transform: rotate(10deg) translateY(-100px) translateX(70px);
+    }
+
+    #funcionalidades-conteudo-img-dois{
+        transform: rotate(10deg) translateY(50px) translateX(70px);
+    }
+}

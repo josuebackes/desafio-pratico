@@ -3,11 +3,10 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 83.5vh;
     gap: 30px;
     position: relative;
     z-index: 2;
-    padding-bottom: 200px;
 }
 
 .carrosel-container-conteudo {
