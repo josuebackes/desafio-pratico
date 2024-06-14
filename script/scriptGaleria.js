@@ -1,4 +1,4 @@
-let botoesArtistas = [
+const botoesArtistas = [
     { botao: "botao-artista-um", conteudo: "galeria-descricao-dois" },
     { botao: "botao-artista-dois", conteudo: "galeria-descricao-tres" },
     { botao: "botao-artista-tres", conteudo: "galeria-descricao-quatro" },
@@ -6,8 +6,8 @@ let botoesArtistas = [
 ];
 
 let conteudoFixo = document.getElementById("galeria-descricao-um");
-let conteudoFuncionalidadesImagemUm = document.getElementById("funcionalidades-conteudo-img-um");
-let conteudoFuncionalidadesImagemDois = document.getElementById("funcionalidades-conteudo-img-dois");
+const conteudoFuncionalidadesImagemUm = document.getElementById("funcionalidades-conteudo-img-um");
+const conteudoFuncionalidadesImagemDois = document.getElementById("funcionalidades-conteudo-img-dois");
 
 botoesArtistas.forEach(item => {
     let botao = document.getElementById(item.botao);
