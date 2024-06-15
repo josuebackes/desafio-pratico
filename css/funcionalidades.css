@@ -1,6 +1,6 @@
 .funcionalidades {
     position: relative;
-    background-image: url("/img/capa.png");
+    background-image: url(/img/capa.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
