@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 900px;
+    width: 540px;
 }
 
 
@@ -96,7 +96,7 @@
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-size: 88px;
+    font-size: 54px;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -109,11 +109,11 @@
 .carrosel-container-botao, .carrosel-container-botao-colorido, .carrosel-container-botao-comimagem {
     color: white;
     background-color: transparent;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     border: 2px solid;
     border-radius: 30px;
-    padding: 15px;
+    padding: 12px;
 }
 
 .carrosel-container-conteudo-botao-link {

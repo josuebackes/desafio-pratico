@@ -1,5 +1,5 @@
 .container-galeria {
-    height: 110vh;
+    height: 90vh;
     display: flex;
     align-items: center;
 }
@@ -21,15 +21,14 @@
 }
 
 .artistas-album {
-    width: 270px;
-    height: 270px;
-    margin: 15px;
+    width: 200px;
+    height: 200px;
+    margin: 8px;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
 }
 
 #galeria-descricao-um {
     margin-left: 40px;
-    height: 570px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -43,24 +42,23 @@
 
 .galeria-descricao-titulo, .galeria-descricao-titulo-animacao {
     font-weight: 700;
-    font-size: 42px;
+    font-size: 34px;
 }
 
 .galeria-descricao-subtitulo, .galeria-descricao-subtitulo-animacao {
-    font-size: 32px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .galeria-descricao-paragrafo{
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
 }
 
 #galeria-descricao-dois {
     margin-left: 40px;
-    height: 570px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -79,7 +77,6 @@
 
 #galeria-descricao-quatro {
     margin-left: 40px;
-    height: 570px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -105,4 +102,5 @@
 
 #galeria-albuns-extra {
     display: none;
+    margin-bottom: 3px;
 }
