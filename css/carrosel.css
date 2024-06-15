@@ -17,19 +17,79 @@
     width: 900px;
 }
 
+
+@keyframes entrarDaDireita {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes sairParaEsquerda {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes entrarDaEsquerda {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes sairParaDireita {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
 .carrosel-container-conteudo-itens {
-    opacity: 0;
-    transition: opacity 1s ease, transform 1s ease;
     position: absolute;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 .ativo {
     opacity: 1;
-    transition: opacity 1s ease, transform 1s ease; 
+}
+
+.saindo-para-esquerda {
+    animation: sairParaEsquerda 0.5s forwards;
+}
+
+.saindo-para-direita {
+    animation: sairParaDireita 0.5s forwards;
+}
+
+.entrando-da-direita {
+    animation: entrarDaDireita 0.5s forwards;
+}
+
+.entrando-da-esquerda {
+    animation: entrarDaEsquerda 0.5s forwards;
 }
 
 .carrosel-container-conteudo-titulo {
@@ -43,22 +103,37 @@
 
 .carrosel-container-conteudo-botoes{
     display: flex;
-    gap: 40px;
-}   
+    gap: 20px;
+} 
 
-.carrosel-container-botao {
+.carrosel-container-botao, .carrosel-container-botao-colorido, .carrosel-container-botao-comimagem {
     color: white;
     background-color: transparent;
     font-size: 18px;
     font-weight: 600;
     border: 2px solid;
     border-radius: 30px;
-    padding: 15px 50px;
+    padding: 15px;
 }
 
-.carrosel-container-botao:hover {
-    background-color: rgb(133, 13, 245);
+.carrosel-container-conteudo-botao-link {
+    text-decoration: none;
+}
+
+.carrosel-container-botao-comimagem {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.carrosel-container-botao-colorido {
+    background-color:  rgb(133, 13, 245);
     border-color: rgb(133, 13, 245);
+}
+
+.carrosel-container-botao-img {
+    width: 11%;
 }
 
 #carrosel-botao-voltar, #carrosel-botao-avancar {
